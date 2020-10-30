@@ -24,6 +24,8 @@ class Solution {
       queue.offer(new int[]{0, 0, 0});
       
       while(!queue.isEmpty()) {
+          // *** 注意 此处必须先拿到 size = queue.size(); ***
+          // *** 这种会出错: for(int i = 0; i < queue.size(); i++); ***
           int size = queue.size();
           for(int i = 0; i < size; i++) {
               int[] cur = queue.poll();
