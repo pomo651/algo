@@ -7,17 +7,17 @@ class Solution {
         // initial
         int m = matrix.length;
         int n = matrix[0].length;
-        int y = 0;
         int x = m - 1;
-        //loop from left bottom to  right top
+        int y = 0;
+        // loop from left bottom to right top
         while(x >= 0 && y < n) {
             if(matrix[x][y] == target) {
                 return true;
-            }else if(matrix[x][y] < target) {
+            } else if(matrix[x][y] < target) {
                 y++;
             }
             //matrix[x][y] > target
-            else{
+            else {
                 x--;
             }
         }
