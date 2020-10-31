@@ -3,16 +3,18 @@
  * @param {number} target
  * @return {boolean}
  */
+
 var searchMatrix = function (matrix, target) {
   // corner
   if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
     return false;
   }
+
   // initial
   let m = matrix.length;
   let n = matrix[0].length;
-  var x = m - 1;
-  var y = 0;
+  let x = m - 1;
+  let y = 0;
 
   // left bottom to right top
   while (x >= 0 && y <= n - 1) {
@@ -24,5 +26,6 @@ var searchMatrix = function (matrix, target) {
       y++;
     }
   }
+
   return false;
 };
