@@ -1,4 +1,2 @@
 # algo
 
-@Cathy 
-@Jason
